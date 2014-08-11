@@ -1,0 +1,135 @@
+/* ---------------------------------------------------------
+   HTML5 Bones
+   This stylesheet contains print styling and a section for 
+   you to simply add your own. This is a basic template 
+   after all.
+   ---------------------------------------------------------*/
+	body {
+   
+	}
+	/* Default link styling */
+	a:link { color:#007DF5; }
+	a:visited { color:#007DF5; }
+	a:hover, a:focus { color:#007DF5; }
+	a:active { color:#007DF5; }
+	
+	
+	
+/* ---------------------------------------------------------
+   Author's styles
+   ---------------------------------------------------------*/
+
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+body
+{
+	max-width: 700px;
+	margin: 0px auto;
+}
+
+h1 { 
+	font-weight: 400;
+	font-size: 4em;
+	margin: 0;
+}
+h1 img
+{
+	width: 1em;
+	vertical-align: bottom;
+}
+
+h2 { 
+	font-weight: 400;
+	font-size: 1.2em;
+	margin: 0;
+}
+h3 {
+	font-variant: small-caps;
+	font-size: 2em;
+	font-weight: 700;
+	margin: 0;
+}
+
+a {
+	color: #0271FA;
+}
+
+img {
+	margin: 0;
+}
+
+header {
+	text-align: center;
+}
+
+section {
+	overflow: hidden;
+	border-top: 1px dashed #ccc;
+	padding: 1em;
+	margin: 1em 0;
+}
+
+section img {
+	border: 1px solid #ccc;
+	width: 200px;
+	height: 170px;
+}
+
+section img:hover {
+	border: 1px dotted #0271FA;
+}
+
+.left
+{
+	text-align: right;
+}
+
+.left img
+{
+	float: left;
+	margin-right: 1em;
+}
+
+.right img
+{
+	float: right;
+	margin-left: 1em;
+}
+
+/* ---------------------------------------------------------
+   Print styles
+   ---------------------------------------------------------*/
+@media print {
+    * {
+        color:#000 !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
+		background:transparent !important;
+    }
+	html { background-color:#fff; }
+	/* Hide navigation */
+	nav { display:none; }
+
+	/* Show link destinations in brackets after the link text */
+	a[href]:after { content: " (" attr(href) ") "; }
+	a[href] {
+		font-weight:bold;
+		text-decoration:underline;
+		color:#06c;
+		border:none;
+	}
+	/* Don't show link destinations for JavaScript or internal links */ 
+	a[href^="javascript:"]:after, a[href^="#"]:after { content:""; }
+	
+	/* Show abbr title value in brackets after the text */
+	abbr[title]:after { content: " (" attr(title) ")"; }
+
+	figure { 
+		margin-bottom:1em; 
+		overflow:hidden;
+	}
+
+	figure img { border:1px solid #000; }
+}
