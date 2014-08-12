@@ -25,7 +25,7 @@
 
 body
 {
-	max-width: 700px;
+	max-width: 800px;
 	margin: 0px auto;
 }
 
@@ -40,7 +40,7 @@ h1 img
 	vertical-align: bottom;
 }
 
-h2 { 
+header h2 { 
 	font-weight: 400;
 	font-size: 1.2em;
 	margin: 0;
@@ -51,6 +51,16 @@ h3 {
 	font-weight: 700;
 	margin: 0;
 }
+
+main h2 { 
+	font-variant: small-caps;
+	font-size: 2.5em;
+	font-weight: 700;
+	margin: 0;
+	color: #0271FA;
+	text-align: center;
+}
+
 
 a {
 	color: #0271FA;
@@ -64,7 +74,12 @@ header {
 	text-align: center;
 }
 
-section {
+#devices {
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+section, blockquote {
 	overflow: hidden;
 	border-top: 1px dashed #ccc;
 	padding: 1em;
@@ -79,6 +94,37 @@ section img {
 
 section img:hover {
 	border: 1px dotted #0271FA;
+}
+
+blockquote p
+{
+	font-weight: 1.3em;
+	font-weight: 700;
+}
+
+blockquote footer
+{
+	font-style: oblique;
+	text-align: right;
+}
+
+nav 
+{
+	margin-top: 1em;
+  	text-align: justify;
+	width: 100%;
+}
+
+nav a {
+	width: 100px;
+	text-align: center;
+	display: inline-block;
+}
+
+nav:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
 }
 
 .left
@@ -96,6 +142,12 @@ section img:hover {
 {
 	float: right;
 	margin-left: 1em;
+}
+
+#footer
+{
+	text-align: center;
+	margin: 1em;
 }
 
 /* ---------------------------------------------------------
