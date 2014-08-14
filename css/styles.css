@@ -52,6 +52,11 @@ h3 {
 	margin: 0;
 }
 
+main
+{
+	margin-bottom: 5em;
+}
+
 main h2 { 
 	font-variant: small-caps;
 	font-size: 2.5em;
@@ -79,7 +84,7 @@ header {
 	margin-bottom: 1em;
 }
 
-section, blockquote {
+section {
 	overflow: hidden;
 	border-top: 1px dashed #ccc;
 	padding: 1em;
@@ -88,23 +93,27 @@ section, blockquote {
 
 section img {
 	border: 1px solid #ccc;
-	width: 200px;
-	height: 170px;
+	width: 250px;
+	height: 200px;
 }
 
 section img:hover {
 	border: 1px dotted #0271FA;
 }
 
+blockquote {
+	border-top: 1px dashed #ccc;
+	padding: 0.5em;
+	margin: 0.5em 0;
+}
+
 blockquote p
 {
 	font-weight: 1.3em;
-	font-weight: 700;
 }
 
 blockquote footer
 {
-	font-style: oblique;
 	text-align: right;
 }
 
