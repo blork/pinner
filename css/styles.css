@@ -52,6 +52,7 @@ h3 {
 	margin: 0;
 }
 
+
 main
 {
 	margin-bottom: 5em;
@@ -75,14 +76,28 @@ img {
 	margin: 0;
 }
 
+#devices {
+	width: 100%;
+}
+
+#appstore
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#appstore img
+{
+	width: 190px;
+	height: 62px;
+}
+
 header {
 	text-align: center;
 }
 
-#devices {
-	width: 100%;
-	margin-bottom: 1em;
-}
 
 section {
 	overflow: hidden;
