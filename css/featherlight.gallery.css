@@ -55,8 +55,7 @@
 		/* center vertically */
 		margin-top: -40px;
 
-		text-shadow: 0px 0px 5px #fff;
-		color: #fff;
+		color: #000;
 		font-style: normal;
 		font-weight: normal;
 	}
@@ -69,18 +68,6 @@
 	.featherlight-next:hover span,
 	.featherlight-previous:hover span {
 		display: inline-block;
-	}
-}
-
-/* Allways display arrows on touch devices */
-@media only screen and (max-device-width: 1024px){
-	.featherlight-next:hover,
-	.featherlight-previous:hover {
-		background: none;
-	}
-	.featherlight-next span,
-	.featherlight-previous span {
-		display: block;
 	}
 }
 

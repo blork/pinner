@@ -56,7 +56,7 @@
 		border-bottom: 25px solid transparent;
 
 		/* dimensions: handling small or non existing (loading images) content */
-		min-width:  30%;
+		min-width:  10%;
 
 		/* dimensions: handling large content */
 		margin-left: 5%;
@@ -70,6 +70,7 @@
 		/* reset white-space wrapping */
 		white-space: normal;
 	}
+
 
 	/* contains the content */
 	.featherlight .featherlight-inner {
@@ -100,7 +101,9 @@
 
 	.featherlight .featherlight-image {
 		/* styling */
-		width: 100%;
+		text-align: center;
+		max-height: 95%;
+		max-width:  100%;
 	}
 
 
@@ -116,15 +119,3 @@
 	}
 }
 
-/* handling phones and small screens */
-@media only screen and (max-width: 1024px) {
-	.featherlight .featherlight-content {
-		/* dimensions: maximize lightbox with for small screens */
-		margin-left: 10px;
-		margin-right: 10px;
-		max-height: 98%;
-
-		padding: 10px 10px 0;
-		border-bottom: 10px solid transparent;
-	}
-}
