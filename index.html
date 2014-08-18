@@ -12,7 +12,8 @@
 	<link href="css/normalize.css" rel="stylesheet" media="all">
 	<link href="css/styles.css" rel="stylesheet" media="all">
 	<link href="css/featherlight.css" rel="stylesheet" media="all">
-	
+	<link href="css/featherlight.gallery.css" rel="stylesheet" media="all">
+
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -28,46 +29,46 @@
 <main id="main">
 	<h2>Features</h2>
 	<section class="right">
-		<a href="img/screenshots/extension@2x.png" data-featherlight="image"><img src="img/small/extension.png"></a>
+		<a href="img/screenshots/extension.png" class="gallery"><img src="img/small/extension.png"></a>
 		<h3>Share Extensions</h3>
 		<p>For the first time, create a new bookmark in Pinner from anywhere you can share a URL or web page, using the new <em>Share Extensions</em> available in <em>iOS 8</em>.</p>
 		<p>Quickly save a webpage to Pinboard without ever leaving the current app. Like to automate your apps? Pinner also supports a <em><a href="http://pinner.uservoice.com/knowledgebase/articles/180990-url-scheme">URL scheme</a></em>.</p>
 	</section>
 	<section class="left">
-		<a href="img/screenshots/handoff@2x.png" data-featherlight="image"><img src="img/small/handoff.png"></a>
+		<a href="img/screenshots/handoff.png" class="gallery"><img src="img/small/handoff.png"></a>
 		<h3>Continuity</h3>
 		<p>Keep reading a bookmark when switching between devices using <em>Handoff</em>.</p>
 		<p>Transfer a bookmark directly between copies of the app running on iPhone &amp; iPad, or send the page to Safari on devices where Pinner isn't installed - including Macs running <em>OS X Yosemite</em>.</p>
 	</section>
 	<section class="right">
-		<a href="img/screenshots/social@2x.png" data-featherlight="image"><img src="img/small/social.png"></a>
+		<a href="img/screenshots/social.png" class="gallery"><img src="img/small/social.png"></a>
 		<h3>Social Bookmarking</h3>
 		<p>Along with your bookmarks - synced and saved to your device - browse through categories of bookmarks from other users, including <em>Popular</em>, <em>Recent</em>, <em>Wikipedia</em> &amp; <em>Fandom</em>.</p>
 		<p>Follow users on Pinboard.in, then view their latest bookmarks through the <em>Network</em> section.</p>
 	</section>
 	<section class="left">	
-		<a href="img/screenshots/customisation@2x.png" data-featherlight="image"><img src="img/small/customisation.png" ></a>
+		<a href="img/screenshots/customisation.png" class="gallery"><img src="img/small/customisation.png" ></a>
 		<h3>Customisation</h3>
 		<p>Create custom searches on both <em>your bookmarks</em> and <em>community bookmarks</em>.</p>
 		<p>Get fast access to your most important bookmarks &amp; the newest ones from around the web. Filter by tag, title, author and URL.</p>
 	</section>
 
 	<section class="right">
-		<a href="img/reading@2x.png" data-featherlight="image"><img src="img/small/reading.png"></a>
+		<a href="img/screenshots/reading.png" class="gallery"><img src="img/small/reading.png"></a>
 		<h3>Reading</h3>
 		<p>Reading mode, powered by Readability, gives you just the article and cuts out the cruft.</p> 
 		<p>Adjust the font, text size, margins, line spacing - create the perfect reading experience.</p> 
 	</section>
 
 	<section class="left">
-		<a href="img/screenshots/darkmode@2x.png" data-featherlight="image"><img src="img/small/darkmode.png"></a>
+		<a href="img/screenshots/darkmode.png" class="gallery"><img src="img/small/darkmode.png"></a>
 		<h3>Theming</h3>
 		<p>Triple-tap the top bar to switch to <em>Dark Mode</em>, designed to be perfect for night-time reading.</p> 
 		<p>Choose between one of 3 app fonts - <em>Lato</em>, <em>Avenir</em>, and the classic <em>Helvetica Neue</em>. Pick between 15 fonts for reading.</p> 
 	</section>
 
 	<section class="right">
-		<a href="img/screenshots/ipadmenu@2x.png" data-featherlight="image"><img src="img/small/ipadmenu.png"></a>
+		<a href="img/screenshots/ipadmenu.png" class="gallery"><img src="img/small/ipadmenu.png"></a>
 		<h3>All Devices</h3>
 		<p>Pinner is a <em>universal</em> app available on iPhone and iPad, optimised for Retina displays, 64-bit CPUs, and all sizes of device.</p> 
 		<p>AutoLayout &amp; Dynamic Type support means Pinner looks great on every size of device, including the new <em>iPhone 6</em>.</p>
@@ -108,5 +109,11 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="js/retina.min.js"></script> 
 <script type="text/javascript" src="js/featherlight.js"></script> 
+<script type="text/javascript" src="js/featherlight.gallery.js"></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.gallery').featherlightGallery();
+});
+</script>
 </body>
 </html>
