@@ -221,6 +221,10 @@ section img {
 	#devices {
 		display: none;
 	}
+	
+	nav a {
+		clear:both;
+	}
 }
 
 
