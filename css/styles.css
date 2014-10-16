@@ -224,6 +224,7 @@ section img {
 	
 	nav a {
 		clear:both;
+		display: block;
 	}
 }
 
