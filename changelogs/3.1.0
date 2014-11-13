@@ -1,0 +1,15 @@
+# Pinner 3.1.0
+
+- Settings screen moved back into the app and out of "Settings.app". Some people prefer this, some don't - in order for extensions to have settings, it needed to be in the app.
+- "Add bookmark form clipboard" toolbar is shown with correct theme.
+- Option to automatically add tags when creating new bookmark.
+- Update login button after logging in or out.
+- Fixed issue where a blank tag could be added.
+
+## Extensions:
+- Fixed hang if sharing app doesn't actually share anything. 
+
+## Quick Pin Extension:
+- Improved style of "Loading" pop-up.
+- Renamed "Read Later" to "Quick Pin", added settings to customise its behaviour.
+- Better loading of missing bookmark fields when sharing from apps that provide only a URL, such as Tweetbot .
