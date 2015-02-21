@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Set this to the main language of your site -->
+<head>
+	<meta charset="utf-8">
+
+	<title>Pinner Feedback</title>
+
+  <meta name="description" content="Pinner, a delightful Pinboard.in client for iPad and iPhone.">
+	<meta name="apple-itunes-app" content="app-id=591613202">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+
+	<link href="css/normalize.css" rel="stylesheet" media="all">
+	<link href="css/styles.css" rel="stylesheet" media="all">
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<main>
+	<section class="feedback">
+		<h3>URL Scheme</h3>
+		<p>To add a bookmark to Pinner you can use the following URL scheme:</p>
+
+		<pre><code>pinner://bookmark</code></pre>
+
+		<p>with the parameters:</p>
+
+		<pre><code>- href (required) (the url to the bookmarked page)
+- title (the title for the bookmark)
+- tags (tags for the bookmark, comma separated)
+- extended (a description for the bookmark)
+- shared (0 for private, 1 for public)
+- toread (0 for normal, 1 to mark it as 'to read')</code></pre>
+
+		<p>You can also use the following snippet as a bookmarklet within Safari:</p>
+
+		<pre><code>javascript:q=location.href;if(document.getSelection)%7Bd=document.getSelection();%7Delse%7Bd='';%7D;p=document.title;window.location='pinner://bookmark?href='+encodeURIComponent(q)+'&amp;extended='+encodeURIComponent(d)+'&amp;title='+encodeURIComponent(p);</code></pre>
+
+		<p>It will use the page title as the title, and your selected text as the description.</p><p><a href="javascript:q=location.href;if(document.getSelection)%7Bd=document.getSelection();%7Delse%7Bd='';%7D;p=document.title;window.location='pinner://bookmark?href='+encodeURIComponent(q)+'&extended='+encodeURIComponent(d)+'&title='+encodeURIComponent(p);">Drag this link to your bookmarks bar to add</a>.</p><p>For example, if you’d like bookmarks added this way to automatically have the tags ‘safari’ and ‘iOS’, you would add:</p>
+
+		<pre><code>+&amp;tags=safari,iOS</code></pre>
+
+		<p>before the semicolon at the end. Similarly, you might wish for your bookmarks to be automatically set to read later and be private, so you could add:</p>
+
+		<pre><code>+&amp;shared=0&amp;toread=1</code></pre>
+	</section>
+	<section class="right">
+
+		<h3>x-callback-url</h3>
+
+		<p>Support for <a href="http://x-callback-url.com">x-callback-url</a> has been available since 1.03. Put simply, this means you can set your bookmarklet to automatically take you back to your browser after adding a bookmark. For example, in Safari:</p>
+
+		<pre><code>javascript:q=location.href;if(document.getSelection)%7Bd=document.getSelection();%7Delse%7Bd='';%7D;p=document.title;window.location='pinner://x-callback-url/bookmark?x-source=Safari&amp;x-success='+encodeURIComponent(q)+'&amp;x-cancel='+encodeURIComponent(q)+'&amp;href='+encodeURIComponent(q)+'&amp;extended='+encodeURIComponent(d)+'&amp;title='+encodeURIComponent(p);</code></pre>
+
+		<p><span style="background-color: rgb(255, 255, 255);"><a href="javascript:q=location.href;if(document.getSelection)%7Bd=document.getSelection();%7Delse%7Bd='';%7D;p=document.title;window.location='pinner://x-callback-url/bookmark?x-source=Safari&x-success='+encodeURIComponent(q)+'&x-cancel='+encodeURIComponent(q)+'&href='+encodeURIComponent(q)+'&extended='+encodeURIComponent(d)+'&title='+encodeURIComponent(p);">Drag this link to your bookmarks bar to add</a>.</span><a href="javascript:q=location.href;if(document.getSelection)%7Bd=document.getSelection();%7Delse%7Bd='';%7D;p=document.title;window.location='pinner://x-callback-url/bookmark?x-source=Safari&x-success='+encodeURIComponent(q)+'&x-cancel='+encodeURIComponent(q)+'&href='+encodeURIComponent(q)+'&extended='+encodeURIComponent(d)+'&title='+encodeURIComponent(p);"><br></a></p><p>You can modify the bookmarklet to take you back to any app by changing the ‘x-source’, ‘x-success’ and ‘x-cancel’ attributes. For example, for Google Chrome:<br></p>
+
+<pre><code>javascript:q=location.href;if(document.getSelection)%7Bd=document.getSelection();%7Delse%7Bd='';%7D;p=document.title;window.location='pinner://x-callback-url/bookmark?x-source=Chrome&amp;x-success=googlechrome://&amp;x-cancel=googlechrome://&amp;href='+encodeURIComponent(q)+'&amp;extended='+encodeURIComponent(d)+'&amp;title='+encodeURIComponent(p);</code></pre>
+
+		<p><a href="javascript:q=location.href;if(document.getSelection)%7Bd=document.getSelection();%7Delse%7Bd='';%7D;p=document.title;window.location='pinner://x-callback-url/bookmark?x-source=Chrome&x-success=googlechrome://&x-cancel=googlechrome://&href='+encodeURIComponent(q)+'&extended='+encodeURIComponent(d)+'&title='+encodeURIComponent(p);">Drag this link to your bookmarks bar to add</a>.</p><div></div>
+
+	</section>
+
+</main>
+
+</body>
+</html>

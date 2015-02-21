@@ -1,20 +1,20 @@
 /* ---------------------------------------------------------
    HTML5 Bones
-   This stylesheet contains print styling and a section for 
-   you to simply add your own. This is a basic template 
+   This stylesheet contains print styling and a section for
+   you to simply add your own. This is a basic template
    after all.
    ---------------------------------------------------------*/
 	body {
-   
+
 	}
 	/* Default link styling */
 	a:link { color:#007DF5; }
 	a:visited { color:#007DF5; }
 	a:hover, a:focus { color:#007DF5; }
 	a:active { color:#007DF5; }
-	
-	
-	
+
+
+
 /* ---------------------------------------------------------
    Author's styles
    ---------------------------------------------------------*/
@@ -30,7 +30,7 @@ body
 	margin: 0px auto;
 }
 
-h1 { 
+h1 {
 	font-weight: 700;
 	font-size: 4em;
 	margin: 0;
@@ -41,7 +41,7 @@ h1 img
 	vertical-align: bottom;
 }
 
-header h2 { 
+header h2 {
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 0.8em;
@@ -66,7 +66,7 @@ main
 	margin-bottom: 5em;
 }
 
-main h2 { 
+main h2 {
 	font-size: 2.5em;
 	font-weight: 700;
 	margin: 0.5em 0;
@@ -93,7 +93,7 @@ img {
 	clear: both;
 	width: 100%;
 	height: 350px;
-	background-image: url("../img/devices.png");	
+	background-image: url("../img/devices.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	border-bottom: 1px dashed #ccc;
@@ -133,7 +133,6 @@ header {
 
 section {
 	overflow: hidden;
-	border-top: 1px dashed #ccc;
 	padding: 2em 1em;
 }
 
@@ -154,7 +153,7 @@ blockquote footer
 	text-align: right;
 }
 
-nav 
+nav
 {
 	margin-top: 1em;
   	text-align: justify;
@@ -175,6 +174,12 @@ section img {
 .left
 {
 	text-align: right;
+	border-top: 1px dashed #ccc;
+}
+
+.right
+{
+	border-top: 1px dashed #ccc;
 }
 
 .left img
@@ -189,7 +194,12 @@ section img {
 	margin: 1em 0em 1em 1em;
 }
 
-@media (max-width: 550px) { 
+.feedback p
+{
+	text-align: left;
+}
+
+@media (max-width: 550px) {
 	.right img, .left img {
 		display: block;
 		clear: both;
@@ -202,6 +212,12 @@ section img {
 	section p {
 		clear: both;
 		text-align: center;
+	}
+
+
+	.feedback p
+	{
+		text-align: left;
 	}
 
 	section h3 {
@@ -221,7 +237,7 @@ section img {
 	#devices {
 		display: none;
 	}
-	
+
 	nav a {
 		clear:both;
 		display: block;
@@ -233,6 +249,20 @@ section img {
 {
 	text-align: center;
 	margin: 1em;
+}
+
+pre {
+	margin: 1em;
+	padding: 1em;
+	border: 1px dashed #ccc;
+	background-color: #fefefe;
+	overflow: scroll;
+	font-size: 0.8em;
+}
+
+code
+{
+	font-family: Monaco, Consolas, Menlo, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
 /* ---------------------------------------------------------
@@ -257,14 +287,14 @@ section img {
 		color:#06c;
 		border:none;
 	}
-	/* Don't show link destinations for JavaScript or internal links */ 
+	/* Don't show link destinations for JavaScript or internal links */
 	a[href^="javascript:"]:after, a[href^="#"]:after { content:""; }
-	
+
 	/* Show abbr title value in brackets after the text */
 	abbr[title]:after { content: " (" attr(title) ")"; }
 
-	figure { 
-		margin-bottom:1em; 
+	figure {
+		margin-bottom:1em;
 		overflow:hidden;
 	}
 
