@@ -194,6 +194,11 @@ section img {
 	margin: 1em 0em 1em 1em;
 }
 
+.feedback
+{
+	padding: 0em 1em;
+}
+
 .feedback p
 {
 	text-align: left;
