@@ -216,13 +216,21 @@ section img {
 
 	section p {
 		clear: both;
-		text-align: center;
+		text-align: justify;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1em;
 	}
 
+	main {
+		padding: 0.5em;
+		margin: 0;
+	}
 
-	.feedback p
+	.feedback
 	{
-		text-align: left;
+		padding: 0;
+		margin: 0;
 	}
 
 	section h3 {
