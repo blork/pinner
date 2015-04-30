@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Set this to the main language of your site -->
+<head>
+	<meta charset="utf-8">
+
+	<title>Pinner for Pinboard</title>
+
+    <meta name="description" content="Pinner, a delightful Pinboard.in client for iPad and iPhone.">
+	<meta name="apple-itunes-app" content="app-id=591613202">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+
+	<link href="css/normalize.css" rel="stylesheet" media="all">
+	<link href="css/android.css" rel="stylesheet" media="all">
+	
+	<link href="css/featherlight.css" rel="stylesheet" media="all">
+	<link href="css/featherlight.gallery.css" rel="stylesheet" media="all">
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header role="banner">
+	<h1><img src="img/big_icon.png">Pinner</h1>
+	<h2>A delightful app for your Pinboard bookmarks</h2>
+</header>
+
+
+<a id="appstore" href="https://play.google.com/store/apps/details?id=com.blork.pinner">
+  <img alt="Android app on Google Play"
+       src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" />
+</a>
+
+<div id="devices"></div>
+
+<main id="main">
+	<h2>Features</h2>
+	<section class="left" id="bookmarks">
+		<a href="img/screenshots-android/yours.png" title="Browse by tag and author - see other users' recently bookmarked pages, as well as your own." class="gallery"><img alt="Browse by tag and author - see other users' recently bookmarked pages, as well as your own." src="img/small-android/yours.png"></a>
+		<h3>Bookmarking</h3>
+		<p>All your bookmarks and tags synchronised to your device and kept up-to-date.</p>
+		<p>Create a new bookmark in Pinner quickly from anywhere you can share a URL or web page.</p>
+	</section>
+	
+	<section class="right" id="social">
+		<a href="img/screenshots-android/theirs.png" title="Browse by tag and author - see other users' recently bookmarked pages, as well as your own." class="gallery"><img alt="Browse by tag and author - see other users' recently bookmarked pages, as well as your own." src="img/small-android/theirs.png"></a>
+		<h3>Social Bookmarking</h3>
+		<p>Along with your bookmarks - synced and saved to your device - browse through categories of bookmarks from other users, including <em>Popular</em>, <em>Recent</em>, <em>Wikipedia</em> &amp; <em>Fandom</em>.</p>
+		<p>Follow users on Pinboard.in, then view their latest bookmarks through the <em>Network</em> section.</p>
+	</section>
+	<section class="left" id="readability">
+		<a title="A customisable reading mode shows your bookmarks at their best." href="img/screenshots-android/optimised.png" class="gallery"><img alt="A customisable reading mode shows your bookmarks at their best." src="img/small-android/optimised.png"></a>
+		<h3>Optimised</h3>
+		<p>Optimised mode, powered by <em>Readability</em>, gives you just the article and cuts out the cruft. Now with improved support for Pinboard notes and animated GIFs.</p>
+		<p>Browse the full webpage or just the content. If you prefer to use your own browser, articles can be opened directly there.</p>
+	</section>
+
+	<section class="right" id="universal">
+		<a title="Pinner probably looks good on the iPhone 6 too, but you'll have to email Tim to find out." href="img/screenshots-android/devices.png" class="gallery"><img alt="Pinner probably looks good on the iPhone 6 too, but you'll have to email Tim to find out." src="img/small-android/devices.png"></a>
+		<h3>All Devices</h3>
+		<p>Pinner is a <em>universal</em> app available on all sizes of device - phones, tablets, and more.</p>
+		<p>Pinner looks great on every size of device, and intelligently scales to fit the screen.</p>
+	</section>
+</main>
+
+<main id="testimonials">
+	<h2>Praise for Pinner on iOS</h2>
+	<blockquote>
+		<p>“Pinner is one of the best ways to interact with Pinboard on iOS. If you’re a fan of Pinboard (and you should be), do yourself a favor and buy this app because it’s the best.”</p>
+		<footer>— <a href="http://thesweetsetup.com/apps/best-pinboard-app-ios"/>The Sweet Setup</a></footer>
+	</blockquote>
+	<blockquote>
+	  <p>“Pinner 3 is an elegant Pinboard client that cleverly implements new iOS 8 features.”</p>
+	  <footer>— <a href="http://www.macstories.net/reviews/pinner-3-brings-pinboard-bookmarking-to-ios-8/">MacStories</a></footer>
+	</blockquote>
+	<blockquote>
+	  <p>“Overall Pinner 3 is one of the best Pinboard apps available today.”</p>
+	  <footer>— <a href="http://beautifulpixels.com/misc/pinner-3-ios-8/">Beautiful Pixels</a></footer>
+	</blockquote>
+	<blockquote>
+	  <p>“If you are a Pinboard user, I would strongly recommend it.”</p>
+	  <footer>— <a href="http://macography.net/2013/07/pinner-app-review/">macography.net</a></footer>
+	</blockquote>
+	<blockquote>
+	  <p>“I'm happy to say that Pinner 2.0 is great.”</p>
+	  <footer>— <a href="http://www.macdrifter.com/2013/11/pinner-2-for-ios.html">Macdrifter</a></footer>
+	</blockquote>
+</main>
+
+<nav>
+	<a href="http://pinnerapp.net">Also on iOS</a>
+	<a href="http://blog.pinnerapp.net">News &amp; Updates</a>
+	<a href="feedback.html">Send Feedback</a>
+	<a href="Press.zip">Press Kit</a>
+</nav>
+
+
+<footer id="footer" role="contentinfo">
+	<small>Copyright &copy; <time datetime="2015">2015</time> <a href="http://www.sam-oakley.co.uk">Sam Oakley</a></small>
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/featherlight.js"></script>
+<script type="text/javascript" src="js/featherlight.gallery.js"></script>
+<script type="text/javascript">
+$('.gallery').featherlightGallery({
+    gallery: {
+        previous: '<',
+        next: '>',
+    }
+});
+</script>
+</body>
+</html>
