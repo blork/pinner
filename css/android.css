@@ -112,8 +112,19 @@ img {
 	display: block;
 	width: 100%;
 	text-align: center;
-	margin: 1em 0;
+	margin: 1em 0 0 0;
 }
+
+#ios
+{
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: black;
+	margin: 0 0 1em 0;
+	font-size: 0.8em;
+}
+
 
 #appstore img
 {

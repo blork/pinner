@@ -8,10 +8,10 @@
 
 	}
 	/* Default link styling */
-	a:link { color:#007DF5; }
-	a:visited { color:#007DF5; }
-	a:hover, a:focus { color:#007DF5; }
-	a:active { color:#007DF5; }
+	a:link { color:#088CC7; }
+	a:visited { color:#088CC7; }
+	a:hover, a:focus { color:#0097FF; }
+	a:active { color:#088CC7; }
 
 
 
@@ -20,7 +20,8 @@
    ---------------------------------------------------------*/
 
 * {
-	font-family: 'Lato', sans-serif;
+  font-family: system, -apple-system,
+      ".SFNSDisplay-Regular", "Helvetica Neue", "Lucida Grande";
 }
 
 body
@@ -70,7 +71,6 @@ main h2 {
 	font-size: 2.5em;
 	font-weight: 700;
 	margin: 0.5em 0;
-	color: #0271FA;
 	text-align: center;
 }
 
@@ -80,10 +80,6 @@ main h2 {
 	margin: 0px auto;
 }
 
-
-a {
-	color: #0271FA;
-}
 
 img {
 	margin: 0;
@@ -111,8 +107,19 @@ img {
 	display: block;
 	width: 100%;
 	text-align: center;
-	margin: 1em 0;
+	margin: 1em 0 0 0;
 }
+
+#android
+{
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: black;
+	margin: 0 0 1em 0;
+	font-size: 0.8em;
+}
+
 
 #appstore img
 {
