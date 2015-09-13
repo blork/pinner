@@ -21,7 +21,7 @@
 
 * {
   font-family: system, -apple-system,
-      ".SFNSDisplay-Regular", "Helvetica Neue", "Lucida Grande";
+      ".SFNSDisplay-Regular", "Helvetica Neue", "Arial";
  }
 
 body
@@ -43,7 +43,7 @@ h1 img
 }
 
 header h2 {
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 1em;
 	margin: 0;
 }
@@ -95,21 +95,20 @@ img {
 	background-size: 800px 350px;
 }
 
+#stores
+{
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 #appstore
 {
-	display: block;
-	width: 100%;
-	text-align: center;
-	margin: 1em 0 0 0;
 }
 
 #android
 {
-	display: block;
-	text-align: center;
-	width: 100%;
 	color: black;
-	margin: 0 0 1em 0;
 	font-size: 0.8em;
 }
 
