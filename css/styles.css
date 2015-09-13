@@ -22,7 +22,7 @@
 * {
   font-family: system, -apple-system,
       ".SFNSDisplay-Regular", "Helvetica Neue", "Lucida Grande";
-}
+ }
 
 body
 {
@@ -32,7 +32,7 @@ body
 }
 
 h1 {
-	font-weight: 700;
+	font-weight: 300;
 	font-size: 4em;
 	margin: 0;
 }
@@ -43,21 +43,20 @@ h1 img
 }
 
 header h2 {
-	font-weight: 400;
-	text-transform: uppercase;
-	font-size: 0.8em;
+	font-weight: 200;
+	font-size: 1em;
 	margin: 0;
 }
 
 h3 {
 	font-size: 2em;
-	font-weight: 700;
+	font-weight: 300;
 	margin: 0;
 }
 
 em
 {
-	font-weight: 700;
+	font-weight: 500;
 	font-style: normal;
 }
 
@@ -69,7 +68,7 @@ main
 
 main h2 {
 	font-size: 2.5em;
-	font-weight: 700;
+	font-weight: 300;
 	margin: 0.5em 0;
 	text-align: center;
 }
@@ -94,12 +93,6 @@ img {
 	background-repeat: no-repeat;
 	border-bottom: 1px dashed #ccc;
 	background-size: 800px 350px;
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
-	#devices {
-		background-image: url("../img/devices@2x.png");
-	}
 }
 
 #appstore
